@@ -2,14 +2,14 @@ import unittest
 
 import torch
 
-from src.models import ResNet
+from src.models import MobileNet
 
 
 class TestModels(unittest.TestCase):
 
     def test_resnet(self):
-        m = ResNet()
-        x = torch.randn(1, 1, 32, 32)
+        m = MobileNet()
+        x = torch.randn(1, 3, 32, 32)
         with torch.no_grad():
             y = m(x)
 
