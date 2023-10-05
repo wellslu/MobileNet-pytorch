@@ -9,7 +9,7 @@ class TestModels(unittest.TestCase):
 
     def test_resnet(self):
         m = MobileNet()
-        x = torch.randn(1, 3, 32, 32)
+        x = torch.randn(1, 3, 224, 224)
         with torch.no_grad():
             y = m(x)
 
